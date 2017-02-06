@@ -1,0 +1,42 @@
+body{
+	background-image: url("../images/triangular.png");
+	text-align: center;
+	color: #696969;
+	font-family: 'VT323', monospace;
+}
+
+h1{
+	background-color: red;
+	font-size: 80px;
+	width: 100%;
+	text-align: center;
+}
+
+.image1{
+	margin: 15px;
+	padding: 15px;
+}
+.image2{
+	margin: 15px;
+	padding: 15px;
+}
+.paragraph1{
+	margin: 15px;
+	padding: 15px;
+}
+
+.gameplay{
+	width: 980px;
+	border: dashed;
+	border-width: 5px;
+	margin: 12px;
+	padding: 12px;
+}
+
+.gametracking{
+	width: 980px;
+	border: dashed;
+	border-width: 5px;
+	margin: 12px;
+	padding: 12px;
+}
