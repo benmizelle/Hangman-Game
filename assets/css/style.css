@@ -6,6 +6,7 @@ body{
 }
 
 h1{
+	border: solid;
 	background-color: red;
 	font-size: 80px;
 	width: 100%;
@@ -29,11 +30,15 @@ p{
 	padding: 15px;
 }
 
+#wordBlanks{
+	
+}
+
 .gameplay{
 	float: left;
 	width: 650px;
 	height: 570px;
-	border: dashed;
+	border: dotted;
 	border-width: 5px;
 	margin: 12px;
 	padding: 12px;
@@ -43,7 +48,7 @@ p{
 	float: right;
 	width: 650px;
 	height: 570px;
-	border: dashed;
+	border: dotted;
 	border-width: 5px;
 	margin: 12px;
 	padding: 12px;
