@@ -12,3 +12,20 @@ console.log(correctAnswer);
 
 document.getElementById("blankSpaces").innerHTML = correctAnswer.join(" ");
 
+  var guessesLeft = 10;
+  var losses = 0;
+  var wins = 0;
+  var previousGuesses = [];
+
+ document.onkeyup=function(){
+ 	var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase;
+ 	console.log(letterGuessed);
+ 	
+ for (var i = 0; i < answerWord.length; ++i) {
+    var letterGuessed = answerWord.charAt(i);
+    console.log(letterGuessed);
+
+
+
+}
+}
