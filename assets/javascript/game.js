@@ -16,16 +16,14 @@ document.getElementById("blankSpaces").innerHTML = correctAnswer.join(" ");
   var losses = 0;
   var wins = 0;
   var previousGuesses = [];
+  var letterGuessed = [];
 
  document.onkeyup=function(){
  	var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase;
  	console.log(letterGuessed);
- 	
- for (var i = 0; i < answerWord.length; ++i) {
+
+for (var i = 0; i < answerWord.length; ++i) {
     var letterGuessed = answerWord.charAt(i);
     console.log(letterGuessed);
-
-
-
 }
 }
