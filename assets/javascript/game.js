@@ -13,35 +13,40 @@ console.log(correctAnswer);
 
 document.getElementById("blankSpaces").innerHTML = correctAnswer.join(" ");
 
-
-
-
-var guessesLeft = 10;
-
-var losses = 0;
-
+var alphabet = ['a','b','c','d','e','f','g','h','i',
+'j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 var wins = 0;
+   console.log(wins);
+var losses = 0;
+   console.log(losses);
 
-var previousGuesses = [];
+var guessesleft = 10;
+console.log(guessesleft);
 
+    var randomletter = alphabet[Math.floor(Math.random()*alphabet.length)];
+   console.log(randomletter);
+   
 // Listen for key press, then...
  document.onkeyup=function(){
  	var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase;
  	console.log(letterGuessed);
+   
+if(letterGuessed === answerWord){
+   alert("Correct!");
+   console.log(letter);
+    console.log(randomletter);
+   wins = wins +1;
+   
+}
+else if(letterGuessed !== answerWord){
+    guessesleft = guessesleft - 1;
+    console.log(guessesleft);
+    if (guessesleft === 0){
+        alert("You lose.");
+        losses = losses +1;
+        guessesleft=10;
+    }
+}//end else if
+}//end keyup function
 
- 
-// Loop through letters of Randomly generated answer word
-for (var i = 0; i < answerWord.length; ++i) {
-    var letterGuessed = answerWord.charAt(i);
-    console.log(letterGuessed);
-}
-// if(letterGuess is not found in the previousGuesses array) {
-// add the letterGuess into the previousGuesses array
-if (letterGuessed !== previousGuesses); {
-     previousGuesses.push(letterGuessed);
-     console.log("new guess");
-// close if
-}
 
-// close onkeyup function
-}
