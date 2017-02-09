@@ -4,7 +4,7 @@ var words  = ["Mario", "Luigi", "Peach", "Bowser", "Yoshi", "Zelda", "Link", "Pi
 var answerWord = words[Math.floor(Math.random() * words.length)];
 	console.log(answerWord);
 var correctAnswer=[];
-// for loop: the characters of the answer word with the character: "_"
+// for loop: displays the characters of the answer word with character: "_"
 for (var i=0; i < answerWord.length ; i++) {
     correctAnswer[i]= " _ ";
 }
@@ -15,26 +15,27 @@ document.getElementById("blankSpaces").innerHTML = correctAnswer.join(" ");
 
 var alphabet = ['a','b','c','d','e','f','g','h','i',
 'j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+
 var wins = 0;
    console.log(wins);
+
 var losses = 0;
    console.log(losses);
 
 var guessesleft = 10;
-console.log(guessesleft);
+	console.log(guessesleft);
 
-    var randomletter = alphabet[Math.floor(Math.random()*alphabet.length)];
-   console.log(randomletter);
+var letterGuessed = alphabet[Math.floor(Math.random()*alphabet.length)];
+	console.log(letterGuessed);
    
-// Listen for key press, then...
+// Listen for key press
  document.onkeyup=function(){
  	var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase;
  	console.log(letterGuessed);
    
 if(letterGuessed === answerWord){
-   alert("Correct!");
-   console.log(letter);
-    console.log(randomletter);
+   console.log(letterGuessed);
+    console.log(answerWord);
    wins = wins +1;
    
 }
